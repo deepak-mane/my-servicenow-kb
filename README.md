@@ -27,14 +27,12 @@ Please take our survey so we can improve our content to meet your business needs
 | New Customer | Existing Customers | 
 | --- |  --- | 
 | Plan
-
 ServiceNow Foundations Course
 System Administration Training
 Champion Enablement Get Started:   Program Management
 Champion Enablement Go Live Communication and Training Guide
 ITSM Process Guides
 Implement ServiceNow
-
 Implementation Bootcamp
 For Express: Implementation Webinar
 Implementation Best Practices
@@ -50,10 +48,8 @@ Configuring Application Menus and Modules
 ServiceNow Express Product Start Here videos
 Customer Success Stories
 Customer Success Best Practices
-Guided SetUp
-|
+Guided SetUp |
 Use additional ServiceNow applications
-
 ITSM Value Realization Webinars:   Application Webinars
 Application Communities (learn from your peers)
 Asset Management
@@ -70,12 +66,10 @@ ITSM Measurement Framework   (webinar by Pink Elephant VP of R&D)
 ServiceNow User Groups: SNUGs
 Knowledge Conference
 Upgrade and grow your use of ServiceNow
-
 Adoption path (coming soon)
 Family End-of-Life (EOL) Upgrade Guide
 Prepare for an Upgrade
 Upgrade Testing
 Early Access
 Learning Library
-ServiceNow Development Path
-|
+ServiceNow Development Path |
