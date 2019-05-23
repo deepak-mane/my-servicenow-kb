@@ -1,6 +1,7 @@
 # my-servicenow-kb
 My Servicenow Learnings
 [Playlists](https://www.youtube.com/user/servicenowdemo/playlists)
+[ServiceNow Developer Training](https://developer.servicenow.com/app.do#!/training/landing?v=london)
 
 
 # Navigations for Admin
