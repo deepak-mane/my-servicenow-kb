@@ -1,5 +1,6 @@
 # my-servicenow-kb
 My Servicenow Learnings
+[Playlists](https://www.youtube.com/user/servicenowdemo/playlists)
 
 
 # Navigations for Admin
