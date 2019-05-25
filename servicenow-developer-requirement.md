@@ -56,78 +56,79 @@ Micro‑certifications validate your expertise in newer or niche areas with non�
 
 
 ### CERTIFIED SYSTEM ADMINISTRATOR
-Skills and essential knowledge necessary to manage ServiceNow
-Certification: Yes
-Duration: 90 minutes
-Cost: $
+- Skills and essential knowledge necessary to manage ServiceNow
+- Certification: Yes
+- Duration: 90 minutes
+- Cost: $
 
 ### SCRIPTING IN SERVICENOW FUNDAMENTALS
-Get comfortable with client and server-side scripting
-Certification: No
-Duration: 3 days
-Cost: $2,400
+- Get comfortable with client and server-side scripting
+- Certification: No
+- Duration: 3 days
+- Cost: $2,400
 
 ### SYSTEM ADMINISTRATION ADVANCED
-Explore Advanced Concepts to Maintain a Healthy Instance
-Certification: No
-Duration: 2 days
-Cost: $1,700
+- Explore Advanced Concepts to Maintain a Healthy Instance
+- Certification: No
+- Duration: 2 days
+- Cost: $1,700
 
 ### APPLICATION DEVELOPMENT FUNDAMENTALS
-Build Custom Applications in ServiceNow
-Certification: Yes
-Duration: 3 days
-Cost: $2,400
+- Build Custom Applications in ServiceNow
+- Certification: Yes
+- Duration: 3 days
+- Cost: $2,400
 
 ### CERTIFIED APPLICATION DEVELOPER
-Take complete advantage of the Now Platform
-Certification: Yes
-Duration: 90 minutes
-Cost: $
+- Take complete advantage of the Now Platform
+- Certification: Yes
+- Duration: 90 minutes
+- Cost: $
 
 ### EVENT MANAGEMENT FUNDAMENTALS
-Enable service-centric operations management
-Certification: Yes
-Duration: 2 days
-Cost: $1,700
+- Enable service-centric operations management
+- Certification: Yes
+- Duration: 2 days
+- Cost: $1,700
 
 ### PERFORMANCE ANALYTICS FUNDAMENTALS
-Manage Performance Analytics for Improved Service Outcomes
-Certification: Yes
-Duration: 2 days
-Cost: $1700
+- Manage Performance Analytics for Improved Service Outcomes
+- Certification: Yes
+- Duration: 2 days
+- Cost: $1700
 
 ### CERTIFIED APPLICATION SPECIALIST
-ServiceNow Certified Application Specialist – Performance Analytics Exam
-Certification: Yes
-Duration: 90 minutes
-Cost: $
+- ServiceNow Certified Application Specialist – Performance Analytics Exam
+- Certification: Yes
+- Duration: 90 minutes
+- Cost: $
 
 ### APPLICATION PORTFOLIO MANAGEMENT FUNDAMENTALS
-Realize the benefits of a solid Application Portfolio foundation.
-Certification: Yes
-Duration:
-Cost: $
+- Realize the benefits of a solid Application Portfolio foundation.
+- Certification: Yes
+- Realize the benefits of a solid Application Portfolio foundation.
+- Duration:
+- Cost: $
 
 ### APPLICATION PORTFOLIO MANAGEMENT IMPLEMENTATION
-Certification: Yes
-Duration:
-Cost: $
+- Certification: Yes
+- Duration:
+- Cost: $
 
 ### PROJECT PORTFOLIO MANAGEMENT FUNDAMENTALS
-Manage projects from initial demand to project closure
-Certification: No
-Duration: 2 days
-Cost: $1,700
+- Manage projects from initial demand to project closure
+- Certification: No
+- Duration: 2 days
+- Cost: $1,700
 
 ### PROJECT PORTFOLIO MANAGEMENT IMPLEMENTATION
-Certification: Yes
-Duration: 1 Day
-Cost: $
+- Certification: Yes
+- Duration: 1 Day
+- Cost: $
 
 ### SERVICENOW ORCHESTRATION
-Learn to automate processes that involve external systems
-Certification: No
-Duration: 2 days
-Cost: $1,700
+- Learn to automate processes that involve external systems
+- Certification: No
+- Duration: 2 days
+- Cost: $1,700
 
