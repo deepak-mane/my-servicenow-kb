@@ -47,7 +47,7 @@ ServiceNow Certification exams are computer-based, multiple-choice exams deliver
 To be successful on this exam, attendees should be experienced ServiceNow system administrators who have hands‑on experience administering and developing on a ServiceNow instance. ServiceNow also offers an Application Creation course to help prepare attendees to become successful application developers.
 To prepare for the exam, please download the [exam blueprint](./snow-repo/ds-certified-application-developer.pdf) to review what will be covered.
 
-|Learning Domain | % of Exam |
+|Learning Domain | | % of Exam |
 | --- | --- | --- |
 | 1 | Designing and Creating an Application | 15% |
 | | Determine if an application is a good fit with ServiceNow | | 
