@@ -46,6 +46,44 @@ ServiceNow Certification exams are computer-based, multiple-choice exams deliver
 - Prerequisites
 To be successful on this exam, attendees should be experienced ServiceNow system administrators who have hands‑on experience administering and developing on a ServiceNow instance. ServiceNow also offers an Application Creation course to help prepare attendees to become successful application developers.
 To prepare for the exam, please download the [exam blueprint](./snow-repo/ds-certified-application-developer.pdf) to review what will be covered.
+
+|Learning Domain| | % of Exam |
+| --- | --- | --- |
+| 1 | Designing and Creating an Application | 15% |
+| | Determine if an application is a good fit with ServiceNow | | 
+| | Design and implement a data model| | 
+| | Create modules| | 
+| | Use Application Scope| | 
+| 2 | Application User Interface | 20% |
+| | Create, design, and customize forms| | 
+| | Add/Remove fields from forms and tables| | 
+| | Write, test, and debug client-side scripts for desktop| | 
+| | Write, test, and debug server-side scripts| | 
+| | Use a Record Producer as an application's UI| | 
+| 3 | Security and Restricting Access | 20% |
+| | Restrict access to applications and application modules| | 
+| | Automatically create application Access Controls| | 
+| | Manually create, test, and debug Access Controls| | 
+| | Use GlideSystem methods to script security| | 
+| | Use Application Scope to protect application artifacts| | 
+| 4 | Application Automation | 20% |
+| | Write, test, and debug Workflow and Flow Designer| | 
+| | Implement and use Document Feeds| | 
+| | Create and use Application Properties| | 
+| | Create Events, Scheduled Script Executions (Scheduled Jobs), and Utils (application) Script Includes| | 
+| | Send and receive email| | 
+| | Design and create Homepages and reports| | 
+| 5 | Working with External Data | 10% |
+| | Import data in CSV or Excel format| | 
+| | Integrate to, including testing and debugging, an external data source using SOAP| | 
+| | Integrate to, including testing and debugging, an external data source using REST| | 
+| 6 | Managing Applications | 15% |
+| | Download and install applications| | 
+| | Use Delegated Development to manage source code| | 
+| | and code review| | 
+| | Use the ServiceNow Git integration to manage source code| | 
+| | Total| 100%|
+
 ### ServiceNow Mainline-certification
 ![alt text](./snow-repo/ServiceNow_Mainline_Certification_Vouchers.png)
 ### ServiceNow micro-certification
