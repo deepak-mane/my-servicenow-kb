@@ -46,5 +46,88 @@ ServiceNow Certification exams are computer-based, multiple-choice exams deliver
 - Prerequisites
 To be successful on this exam, attendees should be experienced ServiceNow system administrators who have hands‑on experience administering and developing on a ServiceNow instance. ServiceNow also offers an Application Creation course to help prepare attendees to become successful application developers.
 To prepare for the exam, please download the [exam blueprint](./snow-repo/ds-certified-application-developer.pdf) to review what will be covered.
+### ServiceNow Mainline-certification
 ![alt text](./snow-repo/ServiceNow_Mainline_Certification_Vouchers.png)
+### ServiceNow micro-certification
+Micro‑certifications validate your expertise in newer or niche areas with non‑proctored exams. Earn a micro‑certification in Agent Intelligence, Application Portfolio Management, Asset Model Management, Automated Test Framework, Performance Analytics, Certification Enterprise Onboarding and Transitions, Flow Designer, HR Integrations, IntegrationHub, or Virtual Agent.
 ![alt text](./snow-repo/ServiceNow_Micro-Certification_Vouchers.png)
+
+[ServiceNow Training-and-certification](https://www.servicenow.com/services/training-and-certification.html#course)
+
+
+### CERTIFIED SYSTEM ADMINISTRATOR
+Skills and essential knowledge necessary to manage ServiceNow
+Certification: Yes
+Duration: 90 minutes
+Cost: $
+
+### SCRIPTING IN SERVICENOW FUNDAMENTALS
+Get comfortable with client and server-side scripting
+Certification: No
+Duration: 3 days
+Cost: $2,400
+
+### SYSTEM ADMINISTRATION ADVANCED
+Explore Advanced Concepts to Maintain a Healthy Instance
+Certification: No
+Duration: 2 days
+Cost: $1,700
+
+### APPLICATION DEVELOPMENT FUNDAMENTALS
+Build Custom Applications in ServiceNow
+Certification: Yes
+Duration: 3 days
+Cost: $2,400
+
+### CERTIFIED APPLICATION DEVELOPER
+Take complete advantage of the Now Platform
+Certification: Yes
+Duration: 90 minutes
+Cost: $
+
+### EVENT MANAGEMENT FUNDAMENTALS
+Enable service-centric operations management
+Certification: Yes
+Duration: 2 days
+Cost: $1,700
+
+### PERFORMANCE ANALYTICS FUNDAMENTALS
+Manage Performance Analytics for Improved Service Outcomes
+Certification: Yes
+Duration: 2 days
+Cost: $1700
+
+### CERTIFIED APPLICATION SPECIALIST
+ServiceNow Certified Application Specialist – Performance Analytics Exam
+Certification: Yes
+Duration: 90 minutes
+Cost: $
+
+### APPLICATION PORTFOLIO MANAGEMENT FUNDAMENTALS
+Realize the benefits of a solid Application Portfolio foundation.
+Certification: Yes
+Duration:
+Cost: $
+
+### APPLICATION PORTFOLIO MANAGEMENT IMPLEMENTATION
+Certification: Yes
+Duration:
+Cost: $
+
+### PROJECT PORTFOLIO MANAGEMENT FUNDAMENTALS
+Manage projects from initial demand to project closure
+Certification: No
+Duration: 2 days
+Cost: $1,700
+
+### PROJECT PORTFOLIO MANAGEMENT IMPLEMENTATION
+Certification: Yes
+Duration: 1 Day
+Cost: $
+
+### SERVICENOW ORCHESTRATION
+Learn to automate processes that involve external systems
+Certification: No
+Duration: 2 days
+Cost: $1,700
+
