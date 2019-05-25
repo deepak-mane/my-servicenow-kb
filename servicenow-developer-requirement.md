@@ -33,3 +33,18 @@
 - Knowledge of relational database concepts
 - Experience with ServiceNow Discovery
 - Experience with IT Asset Management and ServiceNow Software Asset Management module
+
+## ServiceNow Certified Application Developer
+DURATION: 90 Minutes
+$ 150
+![alt text](./snow-repo/Recommended_path_for_developer.png)
+- Overview
+Demand for ServiceNow experts is growing rapidly. ServiceNow certification gives attendees the knowledge and confidence to take full advantage of the ServiceNow platform. Throughout the training and certification programs, attendees learn to configure, customize and design with real-world examples and a hands-on approach.
+
+ServiceNow Certification exams are computer-based, multiple-choice exams delivered by ServiceNow testing partner Kryterion, in a proctored environment. Online proctoring is also available.
+
+- Prerequisites
+To be successful on this exam, attendees should be experienced ServiceNow system administrators who have hands‑on experience administering and developing on a ServiceNow instance. ServiceNow also offers an Application Creation course to help prepare attendees to become successful application developers.
+To prepare for the exam, please download the [exam blueprint](./snow-repo/ds-certified-application-developer.pdf) to review what will be covered.
+![alt text](./snow-repo/ServiceNow_Mainline_Certification_Vouchers.png)
+![alt text](./snow-repo/ServiceNow_Micro-Certification_Vouchers.png)
