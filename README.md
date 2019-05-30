@@ -75,3 +75,16 @@ Upgrade Testing
 Early Access
 Learning Library
 ServiceNow Development Path |
+
+
+
+
+### if you dont understand wiki follow below steps. i am assuming that u dont already have transform map for that destination table. if u have then use that
+
+go to system import sets-->load data module
+enter table name..chose file(.xls file) make sure 1st row in excel match fields in your destination table.so it will automap.
+then click on create transform link
+give it a name,select destination table(table in which u want to upload data)
+click on auto map matching fields..if required fields do not match then click on mapping assist and match fields.
+set colesce true to any one field from related list. it will be your unique field
+click transform
