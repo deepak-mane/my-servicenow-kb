@@ -12,7 +12,7 @@ No
 No
 
 ## Incident Re-open Properties
-List of fields (comma-separated) to copy from the original incident when an incident is reopened by email.
+1. List of fields (comma-separated) to copy from the original incident when an incident is reopened by email.
 additional_assignee_list,
 assignment_group,
 business_service,
@@ -37,16 +37,13 @@ urgency,
 watch_list
 
 ## Copy Incident and Create Child Incident Properties
-Enable copy incident feature
+1. Enable copy incident feature
 Yes
-
-Enable create child incident feature.
+2. Enable create child incident feature.
 Yes
-
-Copy attachments from originating incident
+3. Copy attachments from originating incident
 Yes
-
-List of attributes (comma-separated) that will be copied from the originating incident
+4. List of attributes (comma-separated) that will be copied from the originating incident
 assignment_group,
 business_service,
 category,
@@ -65,19 +62,18 @@ urgency,
 priority,
 u_issue_type
 
-Related lists (comma-separated) that will be copied from the originating incident
+5. Related lists (comma-separated) that will be copied from the originating incident
 task_ci,
 task_cmdb_ci_service
 
-List of attributes (comma-separated) from Affected CIs (task_ci) related list that will be copied from the originating incident
+6. List of attributes (comma-separated) from Affected CIs (task_ci) related list that will be copied from the originating incident
 ci_item
 
-List of attributes (comma-separated) from Impacted Services (task_cmdb_ci_service) related list that will be copied from the originating incident
+7. List of attributes (comma-separated) from Impacted Services (task_cmdb_ci_service) related list that will be copied from the originating incident
 cmdb_ci_service
 
 ## Incident Form Fields Configuration Properties
-
-Incident activity formatter fields
+1. Incident activity formatter fields
 assigned_to,
 cmdb_ci,
 incident_state,
@@ -108,16 +104,16 @@ parent_incident,
 caused_by,
 knowledge
 
-Additional comments icon used in Task Activity formatter.
+2. Additional comments icon used in Task Activity formatter.
 images/icons/edit.gifx
 Lookup image using list
 
-Work notes icon used in Task Activity formatter.
+3. Work notes icon used in Task Activity formatter.
 images/icons/filters.gifx
 
-Incident additional comments style.
+4. Incident additional comments style.
 background-color: WhiteSmoke
 
-Incident work notes style.
+5. Incident work notes style.
 background-color: LightGoldenRodYellow
 
