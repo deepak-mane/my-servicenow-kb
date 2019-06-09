@@ -12,7 +12,18 @@ My Servicenow Learnings
 5. To check Problem table -Type in Navigatior problem_list
 6. To check attachments -Type in Navigator sys_attachment
 7. To check Knowledge configuratiions -Type in Navigatior kb_knowledge.config
-8. To check Subscrition details : [license_details_list.do](https://portlandgeneralqa.service-now.com/license_details_list.do?sysparm_query=end_date%3E=javascript:gs.beginningOfToday()^start_date%3C=javascript:gs.endOfToday() )
+8. To check Subscrition details : [license_details_list.do](https://<instance-name>.service-now.com/license_details_list.do?sysparm_query=end_date%3E=javascript:gs.beginningOfToday()^start_date%3C=javascript:gs.endOfToday() )
+9. Configuation Properties Applicaiton wise:  
+  1. Incident
+  2. Major Incident
+  3. Problem
+  4. Request
+  5. Change
+  6. Knowledge
+  7. Service Portal
+  8. Service Level Mangeament
+  9. Configuration Managment
+
 
 # Table Names
 1. sys_filter_list.do - List of Saved Filters
