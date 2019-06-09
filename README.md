@@ -12,7 +12,7 @@ My Servicenow Learnings
 5. To check Problem table -Type in Navigatior problem_list
 6. To check attachments -Type in Navigator sys_attachment
 7. To check Knowledge configuratiions -Type in Navigatior kb_knowledge.config
-8. To check Subscrition details : (https://portlandgeneralqa.service-now.com/license_details_list.do?sysparm_query=end_date%3E=javascript:gs.beginningOfToday()^start_date%3C=javascript:gs.endOfToday() )
+8. To check Subscrition details : [Link](https://portlandgeneralqa.service-now.com/license_details_list.do?sysparm_query=end_date%3E=javascript:gs.beginningOfToday()^start_date%3C=javascript:gs.endOfToday() )
 
 # Table Names
 1. sys_filter_list.do - List of Saved Filters
