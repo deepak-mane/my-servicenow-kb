@@ -1,19 +1,19 @@
 # Incident Management Properties
 ## Incident closure properties
 1. Enable auto closure of incidents based on Resolution date. Setting this to 'No' will make auto closure to run based on the Updated date.
-Yes
+- Yes
 2. Number of days (integer) after which Resolved incidents are automatically closed. Zero (0) disables this feature.
-10
+- 10
 3. Close open Incident Tasks when Incident is closed or canceled.
-Yes
+- Yes
 4. Close open Incident Communication Plans when Incident is closed or canceled.
-No
+- No
 5. Close open Incident Communication Tasks when an Incident Communication Plan is closed or canceled.
-No
+- No
 
 ## Incident Re-open Properties
 1. List of fields (comma-separated) to copy from the original incident when an incident is reopened by email.
-additional_assignee_list,
+- additional_assignee_list,
 assignment_group,
 business_service,
 caller_id,
@@ -38,13 +38,13 @@ watch_list
 
 ## Copy Incident and Create Child Incident Properties
 1. Enable copy incident feature
-Yes
+- Yes
 2. Enable create child incident feature.
-Yes
+- Yes
 3. Copy attachments from originating incident
-Yes
+- Yes
 4. List of attributes (comma-separated) that will be copied from the originating incident
-assignment_group,
+- assignment_group,
 business_service,
 category,
 caused_by,
@@ -63,18 +63,18 @@ priority,
 u_issue_type
 
 5. Related lists (comma-separated) that will be copied from the originating incident
-task_ci,
+- task_ci,
 task_cmdb_ci_service
 
 6. List of attributes (comma-separated) from Affected CIs (task_ci) related list that will be copied from the originating incident
-ci_item
+- ci_item
 
-7. List of attributes (comma-separated) from Impacted Services (task_cmdb_ci_service) related list that will be copied from the originating incident
+7. List of attributes (comma-separated) from Impacted Services (task_cmdb_ci_service) related list that will be copied from the - originating incident
 cmdb_ci_service
 
 ## Incident Form Fields Configuration Properties
 1. Incident activity formatter fields
-assigned_to,
+- assigned_to,
 cmdb_ci,
 incident_state,
 impact,
@@ -105,15 +105,15 @@ caused_by,
 knowledge
 
 2. Additional comments icon used in Task Activity formatter.
-images/icons/edit.gifx
+- images/icons/edit.gifx
 Lookup image using list
 
 3. Work notes icon used in Task Activity formatter.
-images/icons/filters.gifx
+- images/icons/filters.gifx
 
 4. Incident additional comments style.
-background-color: WhiteSmoke
+- background-color: WhiteSmoke
 
 5. Incident work notes style.
-background-color: LightGoldenRodYellow
+- background-color: LightGoldenRodYellow
 
