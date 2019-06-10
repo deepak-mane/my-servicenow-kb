@@ -23,7 +23,7 @@ My Servicenow Learnings
     7. Service Portal
     8. Service Level Mangeament
     9. Configuration Managment
-    10. Discovery  [Discovery Properties](https://<instance-name>.service-now.com/system_properties_ui.do?sysparm_category=Discovery&sysparm_title=Discovery%20Properties)
+    10. [Discovery](Discovery_Properties.md)  [Discovery Properties](https://<instance-name>.service-now.com/system_properties_ui.do?sysparm_category=Discovery&sysparm_title=Discovery%20Properties)
 10. To check CI Class Manager [Open CI Class Manager](https://<instance-name>.service-now.com/$ciModel.do)
 
 # Table Names
