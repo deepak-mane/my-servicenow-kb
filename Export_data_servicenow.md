@@ -10,7 +10,10 @@
 4. (Optional) Specify a query and sort order with URL parameters. For example, &sysparm_query=sys_id%3E%3Db4aedb520a0a0b1001af10e278657d27.
 
 The final URL should look like one of these sample URLs:
-URL	Description
-https://<instance name>.service-now.com/incident_list.do?CSV	Export all incidents to a comma-separated value text file.
-https://<instance name>.service-now.com/incident_list.do?CSV&sysparm_query=sys_id%3E%3Db4aedb520a0a0b1001af10e278657d27	Export a particular incident to a comma-separated value text file.
-https://<instance name>.service-now.com/incident_list.do?CSV&sysparm_orderby=sys_id	Export all incidents to a comma-separated value text file and sort the list by sys_id.
+
+|URL	|Description|
+|---|---|
+|https://<instance name>.service-now.com/incident_list.do?CSV	|Export all incidents to a comma-separated value text file.|
+|https://<instance name>.service-now.com/incident_list.do?CSV&sysparm_query=sys_id%3E%3Db4aedb520a0a0b1001af10e278657d27 |Export a particular incident to a comma-separated value text file.|
+|https://<instance name>.service-now.com/incident_list.do?CSV&sysparm_orderby=sys_id |	Export all incidents to a comma-separated value text file and sort the list by sys_id.|
+  
