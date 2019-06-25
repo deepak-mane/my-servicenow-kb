@@ -26,6 +26,7 @@ My Servicenow Learnings
     10. [Discovery](Discovery_Properties.md)  [Discovery Properties](https://<instance-name>.service-now.com/system_properties_ui.do?sysparm_category=Discovery&sysparm_title=Discovery%20Properties)
 10. To check CI Class Manager [Open CI Class Manager](https://<instance-name>.service-now.com/$ciModel.do)
 11. To check Plugins Activated https://<instance_name>.service-now.com/v_plugin_list.do
+12. To Export to CSV 
 
 # Table Names
 1. sys_filter_list.do - List of Saved Filters
