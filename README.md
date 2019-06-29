@@ -3,7 +3,7 @@ My Servicenow Learnings
 - [Playlists](https://www.youtube.com/user/servicenowdemo/playlists)
 - [ServiceNow Developer Training](https://developer.servicenow.com/app.do#!/training/landing?v=london)
 - [Working with Dashboards](https://www.youtube.com/watch?v=ytI9JL4ifjU)
-
+- [Advanced Dashboards] (https://www.youtube.com/watch?v=Blik6EG9UGg)
 # Navigations for Admin
 1. [Table Structure](https://portlandgeneraltest.service-now.com/table_columns.do)
 2. To check Incident configurations -Type in Navigator incident.config
