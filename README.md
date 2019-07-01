@@ -6,6 +6,7 @@ My Servicenow Learnings
 - [ServiceNow Developer Training](https://developer.servicenow.com/app.do#!/training/landing?v=london)
 - [Working with Dashboards](https://www.youtube.com/watch?v=ytI9JL4ifjU)
 - [Advanced Dashboards](https://www.youtube.com/watch?v=Blik6EG9UGg)
+- [System Configuration | Configuring Inbound Actions and Notifications](https://youtu.be/dhjLiwtT97E)
 - [Inbound email actions](https://www.youtube.com/watch?v=C2FMo3l1swk)
 - [ServiceNow Case Studies](http://www.fideltech.com/servicenow-case-studies/)
 
