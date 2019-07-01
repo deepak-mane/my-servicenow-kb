@@ -1,10 +1,13 @@
 # my-servicenow-kb
 My Servicenow Learnings
+- [Search Knowledge Bases ServiceNow](https://hi.service-now.com/$knowledge.do)
+- [Search ServiceNow SelfService](https://hi.service-now.com/nav_to.do?)
 - [Playlists](https://www.youtube.com/user/servicenowdemo/playlists)
 - [ServiceNow Developer Training](https://developer.servicenow.com/app.do#!/training/landing?v=london)
 - [Working with Dashboards](https://www.youtube.com/watch?v=ytI9JL4ifjU)
 - [Advanced Dashboards](https://www.youtube.com/watch?v=Blik6EG9UGg)
 - [Inbound email actions](https://www.youtube.com/watch?v=C2FMo3l1swk)
+- [ServiceNow Case Studies](http://www.fideltech.com/servicenow-case-studies/)
 
 
 # Navigations for Admin
