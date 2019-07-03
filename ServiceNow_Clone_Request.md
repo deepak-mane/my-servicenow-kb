@@ -1,6 +1,59 @@
 # ServiceNow Clone Instances
 
+## System clone
+The system clone application allows users with the clone_admin or admin role to clone data from one instance to another.
 
+This functionality is primarily used to clone a production instance over an existing sub-production instance before developing or testing changes. All clones are performed using the most recent nightly backup.
+
+In response to a clone request, the ServiceNow platform performs the following tasks:
+1. Generates a file to preserve operational data on the target server.This file contains the data preserved by data preservers.
+2. Copies the database schema from the source instance to the target instance.
+3. Creates tables in the target instance database using the source instance table definitions.
+4. Copies data from the most recent nightly backup of the source instance to the target instance database. Certain large tables are normally excluded. These include audit, log, and email tables.
+5. Briefly disables UI traffic and requests to the target instance server.
+6. Displays the message Clone in progress... to any user accessing the target instance.
+7. Restores operational data preserved from the target instance.
+8. Runs any post-clone cleanup scripts on the target instance.
+9. Briefly suspends all email functions on the target instance.
+10. Queues an event to regenerate text indexes.
+11. Enables UI traffic and requests to the target instance server.
+
+During a clone, the target instance may be intermittently unavailable. After clone completion, you have up to 24 hours to contact ServiceNow Customer Support and request a rollback of the target instance to its pre-clone state. You are notified when the rollback is complete.
+
+- Clone to an instance on a different version :The System Clone application can target an instance running a different instance version from the source. A central web service controls clone processing and automatically modifies the target instance version to match the source instance version. This matching process starts up to 8 hours before the time specified in the Date and time field on the System Clone form. This web service also ensures that there is enough disk space on the target instance for the clone to proceed. When cloning from a backup, the target instance does not need additional time to upgrade or downgrade. The ServiceNow platform performs any version changes during a brief window where the target instance is unavailable, after it copies data from the source instance backup.
+
+- Clone from a backup :The platform uses data from the most recent nightly backup of the source instance when cloning. Backups used for cloning are at most 36 hours old. System Clone begins the initial preparation process, including selecting the latest backup to use, only at the date and time processing is scheduled to commence.
+
+- Clone over production instances:Production instances cannot be used as the target instance for a clone after the instance is live.
+
+### Request a clone
+Request a clone to copy data from a production instance to a non-production instance, or to copy data between non-production instances.
+- Procedure
+ 1. Create a clone target record for each target instance you want to receive clone data.
+ 1. Verify the list of tables excluded from cloning and add or remove tables to exclude from the target instance.
+ 1. Verify the list of tables and system properties that will be saved on the target instance by data preservers and create or modify data preservers as needed.
+ 1. The legacy clone engine does not support data preservers for these records.
+ 1. Tables that extend Task
+ 1. Relationships
+ 1. Hierarchies
+ 1. Dot-walked queries
+ 1. If you are preserving any data not supported by the legacy clone engine, verify there is a recent backup of the target instance available. Should the clone-from-backup-process fail for any reason, you can restore the target instance from the backup.
+
+
+#### Create a clone target
+A clone target record specifies the instance URL and credentials used for cloning.
+
+#### Exclude a table from cloning
+Exclude a table to create an empty but usable table on the target instance.
+
+#### Data preservation on cloning target instances
+Data can use data preservers to protect data on the target instance from being overwritten. If you have custom applications, you must also manually preserve unpublished application content.
+
+Preserve any unpublished applications on the target instance.
+Navigate to System Clone > Request Clone.
+Select the Target instance to receive the cloned data.
+You must create a separate clone request for each target instance you want to receive clone data.
+Complete the Options form section.
 Data preservation on cloning target instances
   - Data preservers : Consider whether to preserve the data in the following tables.
    - Bookmark [sys_ui_bookmark]
@@ -25,14 +78,16 @@ Data preservation on cloning target instances
   - Preserve SAML properties
   - Preserve unpublished applications during a system clone
 
-Cancel a clone
+### Cancel a clone
   - Navigate to System Clone > Live Clones > Active Clones. The system displays the list of currently active clones.
   - Select the clone you want to cancel. The system displays the System clone record.
   - From Related Links, click Cancel Clone. The system stops any current clone activities and sets the State to Canceled.
   - If you want to restart a canceled clone, click Restart Clone, otherwise you can create a new clone request.
-View clone history
+  
+### View clone history
   - Navigate to System Clone > Live Clones > Clone History.
-Post-clone cleanup scripts
+  
+### Post-clone cleanup scripts
   - To add a script, navigate to System Clone > Clone Definition > Cleanup Scripts and click New.
 
 |Script	| Description |
