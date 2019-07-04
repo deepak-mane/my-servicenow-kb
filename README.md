@@ -35,6 +35,7 @@ My Servicenow Learnings
 10. To check CI Class Manager [Open CI Class Manager](https://<instance-name>.service-now.com/$ciModel.do)
 11. To check Plugins Activated https://<instance_name>.service-now.com/v_plugin_list.do
 12. To [Export Data](Export_data_servicenow.md)  
+13. Tale of Two Accounts for Admins[Duty Separation](https://snprotips.com/blog/2018/7/23/admin-duty-separation-with-a-single-account)
 
 # Table Names
 1. sys_filter_list.do - List of Saved Filters
