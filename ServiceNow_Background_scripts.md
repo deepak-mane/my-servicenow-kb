@@ -1,7 +1,8 @@
 # BACKGROUND SCRIPT CODE VAULT
 [Reference](https://www.servicenowelite.com/blog/2017/8/25/code-vault/background-scripts)
+
 ## RECORD QUERIES
-### ACTIVE REQUESTS WITHOUT REQUESTED ITEMS
+### [1] ACTIVE REQUESTS WITHOUT REQUESTED ITEMS
 ```
 (function() {
 var grRequest = new GlideRecord("sc_request");
@@ -24,7 +25,7 @@ gs.print(grRequest.number);
 })();
 ```
 
-### DISTINCT OPERATING SYSTEMS OF CIS
+###  [2] DISTINCT OPERATING SYSTEMS OF CIS
 ```
 (function() {
 var gaServer = new GlideAggregate('cmdb_ci_server'); //GlideAggregate query
@@ -38,7 +39,10 @@ var osCount = gaServer.getAggregate('count'); //Get the count of the OS group
 gs.print('Distinct operating system: ' + gaServer.os + ': ' + osCount);
 }
 })();
-RECORD BY SYSID
+```
+
+###  [3] RECORD BY SYSID
+```
 (function() {
 var sysID = '965c9e5347c12200e0ef563dbb9a7156';//Replace with SysID
 var grObject = new GlideRecord('sys_db_object');
@@ -54,7 +58,10 @@ gs.print(gs.getProperty('glide.servlet.uri') + tableName + '.do?sys_id=' + sysID
 }
 }
 })();
-ALL CI CLASSES
+```
+
+###  [4] ALL CI CLASSES
+```
 (function() {
 var table = new TableUtils("cmdb_ci");
 var ciTableList = j2js(table.getAllExtensions());
@@ -62,7 +69,10 @@ for (var i = 0; i < ciTableList.length; i++) {
 gs.print(ciTableList[i]);
 }
 })();
-FIND CI
+```
+
+###  [5] FIND CI
+```
 (function() {
 grCI = new GlideRecord('cmdb_ci');
 grCI.addQuery('name','=','SAP WEB03');
@@ -71,7 +81,10 @@ while (grCI.next()){
 gs.print('CI Found: '+grCI.name);
 }
 })();
-CI CLASSES USED
+```
+
+###  [6] CI CLASSES USED
+```
 (function() {
 var count = new GlideAggregate('cmdb_ci');
 count.addAggregate('COUNT', 'sys_class_name');
@@ -82,7 +95,10 @@ var classCount = count.getAggregate('COUNT', 'sys_class_name');
 gs.log("The are currently " + classCount + " configuration items with a class of " + ciClass);
 }
 })();
-COMPUTERS WITHOUT SOFTWARE
+```
+
+###  [7] COMPUTERS WITHOUT SOFTWARE
+```
 //change the tablename if you want to query a different table like cmdb_ci_server
 //add a parameter to the function call if you want to add a query
 gs.print(getComputersWithoutSoftware('cmdb_ci_computer'));
@@ -105,7 +121,10 @@ computers.push(grComputer.name.toString());
 }
 return computers;
 }
-DUPLICATE TASK NUMBERS
+```
+
+###  [8] DUPLICATE TASK NUMBERS
+```
 //Find Duplicate Task Numbers
 gs.print(getDuplicates('task','number'));
 function getDuplicates(tablename,val) {
@@ -122,7 +141,10 @@ dupRecords.push(gaDupCheck[val].toString());
 }
 return dupRecords;
 }
-DUPLICATE SERIAL NUMBERS
+```
+
+###  [9] DUPLICATE SERIAL NUMBERS
+```
 //Find Duplicate CIs by Serial Number
 gs.print(getDuplicates('cmdb_ci_server','serial_number'));
 function getDuplicates(tablename,val) {
@@ -139,7 +161,10 @@ dupRecords.push(gaDupCheck[val].toString());
 }
 return dupRecords;
 }
-GROUPS WITHOUT GROUP MEMBERS
+```
+
+###  [10] GROUPS WITHOUT GROUP MEMBERS
+```
 findEmptyGroups();
 function findEmptyGroups() {
 var myGroups = [];
@@ -161,7 +186,10 @@ myGroups.push(grGroup.name.toString());
 }
 gs.print(myGroups);
 }
-FIND LOCATIONS WITH TASKS
+```
+
+###  [11] FIND LOCATIONS WITH TASKS
+```
 (function() {
 gs.print('Task Relationships: ');
 var grLocation= new GlideRecord('cmn_location');
@@ -180,7 +208,10 @@ gs.print('Location: '+grLocation.name+' | Location SysID: '+grLocation.sys_id+' 
 }
 }
 })();
-FIND LOCATIONS WITH CIS
+```
+
+###  [12] FIND LOCATIONS WITH CIS
+```
 (function() {
 gs.print('CI Relationships: ');
 var grLocation= new GlideRecord('cmn_location');
@@ -199,7 +230,10 @@ gs.print('Location: '+grLocation.name+' | Location SysID: '+grLocation.sys_id+' 
 }
 }
 })();
-TABLE ROW COUNTS
+```
+
+###  [13] TABLE ROW COUNTS
+```
 //Find row counts for each table in ServiceNow
 (function() {
 var grDictionary = new GlideRecord('sys_dictionary');
@@ -216,7 +250,10 @@ while (grDictionary.next()) {
  }
 }
 })();
-FIND UNIQUE VALUES
+```
+
+###  [14] FIND UNIQUE VALUES
+```
 findUnique('cmdb_ci_computer','os');//put the table and field you want to find unique
 function findUnique(table,field) {
 var au = new ArrayUtil();
@@ -230,9 +267,10 @@ uniqueArray.push(grTable[field].toString());
 }
 gs.print('Unique Values: ' +au.unique(uniqueArray));
 }
+```
 
- 
-EXPORT TABLE INFORMATION
+###  [15] EXPORT TABLE INFORMATION
+```
 //Print Information about Fields in ServiceNow
 (function() {
 var grSection = new GlideRecord('sys_ui_section');
@@ -253,7 +291,10 @@ gs.print('View: '+grSection.view.title+', Table: '+grSection.name+', Field Label
 }
 }
 })();
-FIND TEXT IN BUSINESS RULES
+```
+
+###  [16] FIND TEXT IN BUSINESS RULES
+```
 findit('incident');
 function findit(str) { 
 var scr = "";
@@ -266,7 +307,10 @@ gs.print(grScript.name);
 }
 }
 }
-FIND USERS WITHOUT PHOTOS
+```
+
+###  [17] FIND USERS WITHOUT PHOTOS
+```
 //Find Users without Photos
 (function() {
 var count = 0;
@@ -282,7 +326,10 @@ count++;
 }
 gs.print("Total:"+count);
 })();
-FIELD TRIP
+```
+
+###  [18] FIELD TRIP
+```
 //Finds all fields and how often they are used
 (function() {
     //Calculate Field Counts
@@ -334,7 +381,10 @@ FIELD TRIP
         }
     }
 })();
-FIND OLDEST RECORD
+```
+
+###  [19] FIND OLDEST RECORD
+```
 (function() {
   var titleMessage = "Table name | Sys Id | Created | Created By";
   gs.log(titleMessage);
@@ -383,7 +433,10 @@ FIND OLDEST RECORD
     }
   }
 })();
-GLIDE SCHEDULE QUERIES
+```
+
+###  [20] GLIDE SCHEDULE QUERIES
+```
 (function() {
 	var grSchedule = new GlideRecord('cmn_schedule');
 	
@@ -411,10 +464,13 @@ GLIDE SCHEDULE QUERIES
 		gs.print("Numeric Difference "+duration.getNumericValue());
 	}
 })();
-RECORD UPDATES
+```
+
+## RECORD UPDATES
 Be careful!!! Always test Background Scripts first in a development instance.
 
-ADD PREFIX OR SUFFIX
+### [1] ADD PREFIX OR SUFFIX
+```
 //Replace the function parameters below call with your own needs
 addPrefixSuffixToField('prefix','incident','active=true^caller_id=681ccaf9c0a8016234234400b98a06818d57c7','short_description','Urgent: ');
 
@@ -437,7 +493,10 @@ updateCount++;
 }
 gs.print('Records Updated: '+ updateCount);
 }
-DELETE COMPUTERS
+```
+
+### [2] DELETE COMPUTERS
+```
 (function() {
 var grComputer = new GlideRecord("cmdb_ci_computer");
 grComputer.addEncodedQuery('sys_created_by=mikekaufman')
@@ -461,7 +520,10 @@ while (grModel.next()) {
 //grModel.deleteRecord();
 }
 })();
-DELETE DUPLICATE ATTACHMENTS
+```
+
+### [3] DELETE DUPLICATE ATTACHMENTS
+```
 (function() {
 var grAttachment = new GlideRecord('sys_attachment');
 grAttachment.addQuery('table_name', 'LIKE', 'ZZ_YY%');
@@ -479,9 +541,10 @@ if (isDuplicate)
 //grAttachment.deleteRecord();
 }
 })();
+```
 
- 
-DELETE OOB TABLE DATA
+### [4] DELETE OOB TABLE DATA
+```
 //Only use if you mean it, will delete all table data
 //CMDB
 deleteTableData("cmdb_ci");
@@ -517,7 +580,10 @@ var gr = new GlideRecord(table);
 gr.query();
 //gr.deleteMultiple();
 }
-DELETE SOFTWARE WITHOUT COMPUTER
+```
+
+### [5] DELETE SOFTWARE WITHOUT COMPUTER
+```
 (function() {
 var gr = new GlideRecord("cmdb_sam_sw_install");
 gr.addEncodedQuery('installed_on=NULL')
@@ -531,7 +597,10 @@ deleteCount++;
 }
 gs.print('Records Deleted: '+ deleteCount);
 })();
-MASS CLOSE CHANGES
+```
+
+### [6] MASS CLOSE CHANGES
+```
 //Mass Close Changes after a certain date
 (function() {
 var grChange = new GlideRecord('change_request');
@@ -546,7 +615,10 @@ grChange.setWorkflow(false);
 gs.log('Closed Change: ' + grChange.number);
 }
 })();
-MASS CLOSE INCIDENTS
+```
+
+### [7] MASS CLOSE INCIDENTS
+```
 (function() {
 var grIncident = new GlideRecord('incident');
 grIncident.addQuery('opened_at','<=','2011-05-17 11:28:26');
@@ -563,7 +635,10 @@ grIncident.setWorkflow(false);
 gs.log('Closed Incident: ' + grIncident.number);
 }
 })();
-REMOVE COMMAS FROM STRING FIELD
+```
+
+### [8] REMOVE COMMAS FROM STRING FIELD
+```
 //Replace 'table name here','query here if needed','field name here' ith your parameters for the comma remove
 removeCommas('table name here','query here if needed','field name here');
 function removeCommas(rcTableName,rcEncodedQuery,rcFieldName) {
@@ -578,9 +653,11 @@ function removeCommas(rcTableName,rcEncodedQuery,rcFieldName) {
  }
  gs.print('Records Updated: '+ updateCount);
 }
-REPLACE SEMICOLON WITH A COMMA
-//Replace 'table name here','query here if needed','field name here' with your parameters
+```
 
+### [9] REPLACE SEMICOLON WITH A COMMA
+```
+//Replace 'table name here','query here if needed','field name here' with your parameters
 replaceSemiColons('table name here','query here if needed','field name here');
 function replaceSemiColons(rcTableName,rcEncodedQuery,rcFieldName) {
  var updateCount = 0;
@@ -591,7 +668,10 @@ function replaceSemiColons(rcTableName,rcEncodedQuery,rcFieldName) {
  grSCR[rcFieldName] = grSCR[rcFieldName].replace(/;/g , ",");
  //grSCR.update();
  }
-RESET KB VIEW COUNTERS
+```
+
+### [10] RESET KB VIEW COUNTERS
+```
 (function() {
 var grKB = new GlideRecord("kb_knowledge");
 grKB.addEncodedQuery('kb_knowledge_base=2d9212c04f35fa00a064d49f0310c714');
@@ -602,7 +682,10 @@ grKB.sys_view_count=0;
 //grKB.update();
 }
 })();
-SYNC ASSET RECORDS
+```
+
+### [11] SYNC ASSET RECORDS
+```
 (function() {
  var grCI = new GlideRecord("cmdb_ci_computer");
  grCI.query();
@@ -616,7 +699,10 @@ var updateCount = 0;
 }
 gs.print('Records Updated: '+ updateCount);
 })();
-LOCKOUT USERS
+```
+
+### [12] LOCKOUT USERS
+```
 (function() {
 var grUser = new GlideRecord("sys_user");
 grUser.addEncodedQuery('active=true^roles!=admin');
@@ -629,7 +715,10 @@ grUser.locked_out = true;
 gs.print(grUser.getDisplayValue() + " was disabled");
 }
 })();
-SET PASSWORD
+```
+
+### [13] SET PASSWORD
+```
 //Resets password for every single user, overwriting their existant password. Use with caution. Replace abc123 with the string in question.
 (function() {
 var grUser= new GlideRecord("sys_user");
@@ -641,7 +730,10 @@ gs.log("updating password for " + grUser.user_name);
 //grUser.update();
 }
 })();
-ADD OUTAGE NUMBERS
+```
+
+### [14] ADD OUTAGE NUMBERS
+```
 (function() {
 var grOutage = new GlidegrOutageord('cmdb_ci_outage');
 grOutage.addQuery('u_number','');
