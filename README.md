@@ -1,5 +1,6 @@
 # my-servicenow-kb
 My Servicenow Learnings
+- [ServiceNow London Platform Admin](https://docs.servicenow.com/bundle/london-platform-administration/page/get-started/servicenow-overview/reference/r_AdministerServiceNow.html)
 - [Search Knowledge Bases ServiceNow](https://hi.service-now.com/$knowledge.do)
 - [Search ServiceNow SelfService](https://hi.service-now.com/nav_to.do?)
 - [Playlists](https://www.youtube.com/user/servicenowdemo/playlists)
