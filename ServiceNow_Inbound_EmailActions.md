@@ -21,10 +21,12 @@ By default, if an email has no identifiable watermark, an inbound email action a
 ### Incident
 
 1.) Creating Incident : This inbound email action is triggered when an email is sent to ServiceNow and the email is not a reply or forward. This inbound email action can set the following fields on a new Incident:
-    - assigned_to
-    - priority
 
-    In addition to being able to explicitly set the values of the above fields within the email, the following is done automatically:
+  - assigned_to
+  - priority
+
+    In addition to being able to explicitly set the values of the above fields within the email, 
+    the following is done automatically:
 
     1. The Incident caller_id is set to the the user who sent the email.
     2. The email subject is set as the Incident short description.
@@ -34,12 +36,7 @@ By default, if an email has no identifiable watermark, an inbound email action a
     6. The Incident notify is set to "2".
     7. The Incident contact type is set to "email".
 
-
-
 ```
-
-
-
 Example email: This email will create a new Incident with the following:
 
 1. The Incident caller is set to "Fred Luddy".
