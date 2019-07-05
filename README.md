@@ -10,6 +10,7 @@ My Servicenow Learnings
 - [System Configuration | Configuring Inbound Actions and Notifications](https://youtu.be/dhjLiwtT97E)
 - [Inbound email actions](https://www.youtube.com/watch?v=C2FMo3l1swk)
 - [ServiceNow Case Studies](http://www.fideltech.com/servicenow-case-studies/)
+- [ServiceNow - How to Create SLAs](https://www.youtube.com/watch?v=1_T2VtFbldQ)
 
 
 # Navigations for Admin
