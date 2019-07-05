@@ -1,7 +1,7 @@
 # ServiceNow Inbound Email Actions
 
 
-
+![alt text](./images/inbound-action-type.png)
 |Order|	Type	| Criteria|
 |---|---|---|
 |1	|Forward | 	The system classifies an email as a forward only when it meets all these criteria:The subject line contains a recognized forward prefix such as FW:.The email body contains a recognized forward string such as From:.The system classifies any email that meets these criteria as a forward, even if the message contains a watermark or record number that otherwise classifies it as a reply.|
