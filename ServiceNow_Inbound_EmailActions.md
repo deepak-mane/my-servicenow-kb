@@ -20,7 +20,7 @@ By default, if an email has no identifiable watermark, an inbound email action a
 
 ### Incident
 
-1.) Creating Incident : This inbound email action is triggered when an email is sent to ServiceNow and the email is not a reply or forward. This inbound email action can set the following fields on a new Incident:
+1.) Creating Incident - When Not Reply OR Forward : This inbound email action is triggered when an email is sent to ServiceNow and the email is not a reply or forward. This inbound email action can set the following fields on a new Incident:
 
   - assigned_to
   - priority
@@ -61,9 +61,48 @@ The wireless network has been down for 30 minutes now.
 assign: Bow Ruggeri
 
 -----
+```
+2.) Create Incident (Forwarded) : This inbound email action is triggered when a forwarded email is sent to ServiceNow. This inbound email action can set the following fields on a new Incident:
+  - assigned_to
+  - priority
+
+    In addition to being able to explicitly set the values of the above fields within the email, the following is done automatically:
+
+    1. The Incident caller_id is set to the the user who replied to the email.
+    2. The email subject is set as the Incident short description.
+    3. The whole email is added to the Incident as a comment.
+    4. The Incident category is set to "request".
+    5. The Incident state is set to "1".
+    6. The Incident notify is set to "2".
+    7. The Incident contact type is set to "email".
 
 ```
-2.) Updating Incidents : This inbound email action can update the following fields on an Incident:
+Example email: This email will create a new Incident with the following:
+
+1. The Incident caller is set to "Fred Luddy".
+2. The Incident short description will be set to "Not able to connect to wireless network"
+3. The whole email body is added to the Incident as a comment.
+4. The Incident is assigned to "Bow Ruggeri" if the sender has the itil role.
+5. The Incident category is set to "request".
+6. The Incident state is set to "1".
+7. The Incident notify is set to "2".
+8. The Incident contact type is set to "email".
+
+-----
+
+From: 	Fred Luddy <fred.luddy@example.com>
+Subject: 	Fw: Not able to connect to wireless network
+Date: 	June 11, 2013 1:44:55 PM PDT
+To: 	        ServiceNow
+
+The wireless network has been down for 30 minutes now. 
+
+assign: Bow Ruggeri
+
+-----
+```
+
+3.) Updating Incidents : This inbound email action can update the following fields on an Incident:
 - assigned_to
 - priority
 - category
