@@ -62,11 +62,36 @@ assign: Bow Ruggeri
 
 -----
 ```
+
+```
+#Action::Script
+// Create Incident (Forwarded)
+//	Note: current.opened_by is already set to the first UserID that matches the From: email address
+
+current.caller_id = gs.getUserID();
+current.comments = "forwarded by: " + email.origemail + "\n\n" + email.body_text;
+current.short_description = email.subject;
+
+current.category = "request";
+current.incident_state = IncidentState.NEW;
+current.notify = 2;
+current.contact_type = "email";
+
+if (email.body.assign != undefined)
+   current.assigned_to = email.body.assign;
+
+if (email.body.priority != undefined)
+   current.priority = email.body.priority;
+
+current.insert();
+
+```
 2.) Create Incident (Forwarded) : This inbound email action is triggered when a forwarded email is sent to ServiceNow. This inbound email action can set the following fields on a new Incident:
   - assigned_to
   - priority
 
-    In addition to being able to explicitly set the values of the above fields within the email, the following is done automatically:
+    In addition to being able to explicitly set the values of the above fields within the email, 
+    the following is done automatically:
 
     1. The Incident caller_id is set to the the user who replied to the email.
     2. The email subject is set as the Incident short description.
@@ -101,6 +126,29 @@ assign: Bow Ruggeri
 
 -----
 ```
+```
+#Action::Script
+// Create Incident (Forwarded)
+//	Note: current.opened_by is already set to the first UserID that matches the From: email address
+
+current.caller_id = gs.getUserID();
+current.comments = "forwarded by: " + email.origemail + "\n\n" + email.body_text;
+current.short_description = email.subject;
+
+current.category = "request";
+current.incident_state = IncidentState.NEW;
+current.notify = 2;
+current.contact_type = "email";
+
+if (email.body.assign != undefined)
+   current.assigned_to = email.body.assign;
+
+if (email.body.priority != undefined)
+   current.priority = email.body.priority;
+
+current.insert();
+
+```
 
 3.) Updating Incidents : This inbound email action can update the following fields on an Incident:
 - assigned_to
@@ -109,7 +157,9 @@ assign: Bow Ruggeri
 - short_description
 
 ```
-Example reply email: this reply will update comments for the Incident with "Our engineers are on this - should see resolution in a couple hours.", assign the Incident to David Loo, and set priority to "2".
+Example reply email: this reply will update comments for the Incident 
+with "Our engineers are on this - should see resolution in a couple hours.", assign the 
+Incident to David Loo, and set priority to "2".
 
 -----
 
@@ -123,5 +173,52 @@ Our engineers are on this - should see resolution in a couple hours.
 priority: 2
 assigned_to: david.loo
 ```
+```
+#Action::Script
+// Create Incident (Forwarded)
+//	Note: current.opened_by is already set to the first UserID that matches the From: email address
 
+current.caller_id = gs.getUserID();
+current.comments = "forwarded by: " + email.origemail + "\n\n" + email.body_text;
+current.short_description = email.subject;
 
+current.category = "request";
+current.incident_state = IncidentState.NEW;
+current.notify = 2;
+current.contact_type = "email";
+
+if (email.body.assign != undefined)
+   current.assigned_to = email.body.assign;
+
+if (email.body.priority != undefined)
+   current.priority = email.body.priority;
+
+current.insert();
+
+```
+4.) Update Incident (BP) :This inbound email action behaves the same as Update Incident, but additionally will reopen a closed incident if the email subject contains "please reopen". In reopening the incident, the incident state will be set to "2" and "The caller did not feel that this issue was resolved" will be added to the incident as a work note.
+
+```
+#Action::Script
+// Update Incident (BP) - ReOpen
+gs.include('validators');
+
+if (current.getTableName() == "incident") {
+	
+	var gr = current;
+	
+	if (email.subject.toLowerCase().indexOf("please reopen") >= 0)
+		gr = new Incident().reopen(gr, email) || gr;
+	
+	gr.comments = "reply from: " + email.origemail + "\n\n" + email.body_text;
+	
+	if (gs.hasRole("itil")) {
+		if (email.body.assign != undefined)
+			gr.assigned_to = email.body.assign;
+		
+		if (email.body.priority != undefined && isNumeric(email.body.priority))
+			gr.priority = email.body.priority;
+	}
+	
+	gr.update();
+}```
