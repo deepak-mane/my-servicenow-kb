@@ -66,7 +66,8 @@ assign: Bow Ruggeri
 ```
 #Action::Script
 // Create Incident (Forwarded)
-//	Note: current.opened_by is already set to the first UserID that matches the From: email address
+// Note: current.opened_by is already set to the first 
+// UserID that matches the From: email address
 
 current.caller_id = gs.getUserID();
 current.comments = "forwarded by: " + email.origemail + "\n\n" + email.body_text;
@@ -129,7 +130,8 @@ assign: Bow Ruggeri
 ```
 #Action::Script
 // Create Incident (Forwarded)
-//	Note: current.opened_by is already set to the first UserID that matches the From: email address
+// Note: current.opened_by is already set to the first 
+// UserID that matches the From: email address
 
 current.caller_id = gs.getUserID();
 current.comments = "forwarded by: " + email.origemail + "\n\n" + email.body_text;
@@ -176,7 +178,8 @@ assigned_to: david.loo
 ```
 #Action::Script
 // Create Incident (Forwarded)
-//	Note: current.opened_by is already set to the first UserID that matches the From: email address
+// Note: current.opened_by is already set to the first 
+// UserID that matches the From: email address
 
 current.caller_id = gs.getUserID();
 current.comments = "forwarded by: " + email.origemail + "\n\n" + email.body_text;
