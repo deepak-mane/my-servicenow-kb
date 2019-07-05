@@ -1,6 +1,21 @@
 # BACKGROUND SCRIPT CODE VAULT
 [Reference](https://www.servicenowelite.com/blog/2017/8/25/code-vault/background-scripts)
 
+## My Queries
+
+- You can find the list of active users who are logged in currently to the service now instance for all the nodes.Below script which will provide the count of users logged in currently.This uses the stats page to get the information.
+```
+var diag = new Diagnostics();
+while (diag.nextNode()) {
+  var diagNode = diag.getNode();
+  var ss = diagNode.stats.sessionsummary;
+  if (ss) {
+    gs.print('Server: ' + diagNode.name + ' logged in users: ' + diagNode.stats.sessionsummary["@logged_in"]);
+  }
+}
+
+```
+
 ## RECORD QUERIES
 ### [1] ACTIVE REQUESTS WITHOUT REQUESTED ITEMS
 ```
@@ -38,6 +53,7 @@ var osCount = gaServer.getAggregate('count'); //Get the count of the OS group
 //Print the OS name and count of items with that OS
 gs.print('Distinct operating system: ' + gaServer.os + ': ' + osCount);
 }
+
 })();
 ```
 
