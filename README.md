@@ -114,3 +114,41 @@ ServiceNow Development Path |
 - click on auto map matching fields..if required fields do not match then click on mapping assist and match fields.
 - set colesce true to any one field from related list. it will be your unique field
 - click transform
+
+### How to Earn Points [community.servicenow.com](https://community.servicenow.com/community?id=community_earning_points)
+Your reputation in the community is based on the points and expertise you gain while performing different activities within the community.
+
+- Earning Points
+You earn points taking specific actions in the community. These points count towards your forum, topic or global level. The more points you earn, the higher you rank on the leaderboards.
+
+- Badges - A badge is displayed on your profile as a trophy for completing a task in the community. See the list of badges you have unlocked and have yet to unlock on your profile.
+
+- Points - Whenever you complete a task from the list below, you earn the corresponding number of points. See the list of tasks you have been awarded points for on your profile.
+
+See the table below on what designated tasks earn points:
+
+|Points	|Action |
+| --- | --- |
+|5	|Comment marked as helpful|
+|10	|Answer marked as helpful|
+|20	|Article bookmarked|
+|20	|Blog marked as helpful|
+|20	|Blog bookmarked|
+|20	|Article marked as helpful|
+|20	|Video bookmarked|
+|30	|Video marked as helpful|
+|40	|Answer marked correct for a question|
+
+
+| Community Level | Points |
+| --- | --- |
+|Community Level 10  |100,000+ Points|
+|Community Level 9  |50,000 Points|
+|Community Level 8  |30,000 Points|
+|Community Level 7  |15,000 Points|
+|Community Level 6  |8,000 Points|
+|Community Level 5  |4,000 Points|
+|Community Level 4  |2,000 Points|
+|Community Level 3  |1,000 Points|
+|Community Level 2  |500 Points|
+|Community Level 1  |200 Points|
