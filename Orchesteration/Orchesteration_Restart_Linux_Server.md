@@ -63,8 +63,7 @@ This script does the following:
   - Redirects back to the incident.
   
 The UI Action form looks like this:
-
-Error creating thumbnail: Unable to save thumbnail to destination
+```Error creating thumbnail: Unable to save thumbnail to destination```
 
 ### Create the Orchestration Workflow
 For instructions about using Workflows, see [Graphical Workflow Editor](https://old.wiki/index.php/Graphical_Workflow_Editor).
@@ -75,28 +74,15 @@ For instructions about using Workflows, see [Graphical Workflow Editor](https://
 1. Select None in the If condition matches field.
 This workflow is started from a script and not a condition.
 1. Enter a description of the workflow in the Description field.
-
-Error creating thumbnail: Unable to save thumbnail to destination
-
+```Error creating thumbnail: Unable to save thumbnail to destination```
 1. Click Submit.
-The beginning Workflow appears.
-
-Error creating thumbnail: Unable to save thumbnail to destination
-
+   - The beginning Workflow appears.
+```Error creating thumbnail: Unable to save thumbnail to destination```
 1. Drag the Run Command activity from the Orchestration heading in the palette on the right on to the transition line between the Begin and End points.
 1. In the Run Command activity form, type a Name for the activity, such as shutdown and reboot.
-1. Add a hostname or IP address, in this case the scratchpad variable, ${workflow.scratchpad.ip}.
-This variable contains the IP address of a target CI in an incident, which is discovered by a script run in a Run Script activity (added next). Any IPv4 address that points to a NIC that points to the same CI in the target incident will work.
-1. Type shutdown -r now in the Command field.
-This is the shutdown command that is run on the target CI using the IP address provided by the scratchpad variable.
-
-Error creating thumbnail: Unable to save thumbnail to destination
-
-1. Click Submit.
-The Run Command activity appears in the Workflow.
-
-Error creating thumbnail: Unable to save thumbnail to destination
-
+1. Add a hostname or IP address, in this case the scratchpad variable, ${workflow.scratchpad.ip}. This variable contains the IP address of a target CI in an incident, which is discovered by a script run in a Run Script activity (added next). Any IPv4 address that points to a NIC that points to the same CI in the target incident will work.
+1. Type shutdown -r now in the Command field. This is the shutdown command that is run on the target CI using the IP address provided by the scratchpad variable.```Error creating thumbnail: Unable to save thumbnail to destination```
+1. Click Submit. The Run Command activity appears in the Workflow. ```Error creating thumbnail: Unable to save thumbnail to destination```
 1. Drag the Run Script activity from the Utilities palette to the transition line between the beginning of the Workflow and the Run Command activity from the previous step.
 1. In the Run Script activity form, type a descriptive Name, such as Get IP address.
 1. Add the following script to the Script field to return the IP address of the target CI, and then click Submit:
@@ -141,8 +127,5 @@ Adding a server test and work notes that appear in the related incident can make
    - Name: Shutdown failure
    - Work Note: Orchestration: Server failed to shutdown. Cannot restart.
 1. Click Submit.
-1. The Workflow now resembles this:
-
-![alt text](./images/RBA_Example_Workflow.png)
-
+1. The Workflow now resembles this:![alt text](./images/RBA_Example_Workflow.png)
 1. To improve the usability of the Workflow further, add Test Server Alive activities to ensure that the server stops and restarts successfully, then add Worknote activities to communicate this to the incident.
