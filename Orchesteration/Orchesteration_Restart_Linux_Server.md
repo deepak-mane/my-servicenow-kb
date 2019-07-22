@@ -138,8 +138,8 @@ Adding a server test and work notes that appear in the related incident can make
    - Name: Server dead
    - Work Note: Orchestration: Server is dead, cannot restart.
 1. Add the Add Worknote activity after the Run Command activity to exit the Workflow if the platform determines that the server was not shut down.
-  - Name: Shutdown failure
-  - Work Note: Orchestration: Server failed to shutdown. Cannot restart.
+   - Name: Shutdown failure
+   - Work Note: Orchestration: Server failed to shutdown. Cannot restart.
 1. Click Submit.
 1. The Workflow now resembles this:
 
