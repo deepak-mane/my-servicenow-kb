@@ -1,6 +1,6 @@
 # Change Management
 
-The ServiceNow® Change Management application provides a systematic approach to control the life cycle of all changes, facilitating beneficial changes to be made with minimum disruption to IT services.
+The ServiceNow Change Management application provides a systematic approach to control the life cycle of all changes, facilitating beneficial changes to be made with minimum disruption to IT services.
 
 ServiceNow Change Management integrates with the Vulnerability response plugin to introduce extra functionality within Change Management.
 
