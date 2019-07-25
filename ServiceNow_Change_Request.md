@@ -16,6 +16,19 @@ ServiceNow Change Management integrates with the Vulnerability response plugin t
 
 |	Table	|	Element	|	Value	|	Dependent value	|	Label	|	Sequence	|
 |	----	|	----	|	----	|	----	|	----	|	----	|
+|	change_request	|	state	|	'-5	|		|	New	|	1	|
+|	change_request	|	state	|	'-4	|		|	Assess	|	2	|
+|	change_request	|	state	|	'-3	|		|	Authorize	|	3	|
+|	change_request	|	state	|	'-2	|		|	Scheduled	|	4	|
+|	change_request	|	state	|	'-1	|		|	Implement	|	5	|
+|	change_request	|	state	|	0	|		|	Review	|	6	|
+|	change_request	|	state	|	3	|		|	Closed	|	7	|
+|	change_request	|	state	|	4	|		|	Canceled	|	8	|
+
+
+
+|	Table	|	Element	|	Value	|	Dependent value	|	Label	|	Sequence	|
+|	----	|	----	|	----	|	----	|	----	|	----	|
 |	change_request	|	phase_state	|	open	|	requested	|	Open	|	1	|
 |	change_request	|	phase_state	|	open	|	accept	|	Open	|	1	|
 |	change_request	|	phase_state	|	open	|	build	|	Open	|	1	|
