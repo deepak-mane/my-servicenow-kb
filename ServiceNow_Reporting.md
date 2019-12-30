@@ -1,6 +1,7 @@
 # ServiceNow Reporting
 
 - [Performance Analytics Indicators](https://docs.servicenow.com/bundle/newyork-performance-analytics-and-reporting/page/use/performance-analytics/concept/c_Indicators.html)
+- [ServiceNow - Estimate Incident Resolve Time Using Performance Analytics in Kingston](https://www.youtube.com/watch?v=L7MNQ_E94-E)
 - [Reference - Performance Analytics Indicators](https://www.youtube.com/watch?v=QQNujcNOhlY)
 
 ## MTTR
