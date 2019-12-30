@@ -1,5 +1,8 @@
 # ServiceNow Reporting
 
+
+- [Reference - Performance Analytics Indicators](https://www.youtube.com/watch?v=QQNujcNOhlY)
+
 ## MTTR
 Mean time to repair (MTTR) is a basic measure of the maintainability of repairable items. 
 - It represents the average time required to repair a failed component or device.
