@@ -3,6 +3,7 @@
 - [Performance Analytics Indicators](https://docs.servicenow.com/bundle/newyork-performance-analytics-and-reporting/page/use/performance-analytics/concept/c_Indicators.html)
 - [ServiceNow - Estimate Incident Resolve Time Using Performance Analytics in Kingston](https://www.youtube.com/watch?v=L7MNQ_E94-E)
 - [Reference - Performance Analytics Indicators](https://www.youtube.com/watch?v=QQNujcNOhlY)
+- [Doing More with Formula Indicators](https://community.servicenow.com/community?id=community_blog&sys_id=1f0d2ea5dbd0dbc01dcaf3231f961947)
 
 ## MTTR
 Mean time to repair (MTTR) is a basic measure of the maintainability of repairable items. 
