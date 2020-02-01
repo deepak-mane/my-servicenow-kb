@@ -5,6 +5,7 @@ My Servicenow Learnings
 - [Search ServiceNow SelfService](https://hi.service-now.com/nav_to.do?)
 - [Playlists](https://www.youtube.com/user/servicenowdemo/playlists)
 - [ServiceNow Developer Training](https://developer.servicenow.com/app.do#!/training/landing?v=london)
+- [ServiceNow Developer Training](https://www.youtube.com/playlist?list=PLzTvAeLiW8AeO2Ep-qgufgOdLJ5UoA4hf)
 - [Working with Dashboards](https://www.youtube.com/watch?v=ytI9JL4ifjU)
 - [Advanced Dashboards](https://www.youtube.com/watch?v=Blik6EG9UGg)
 - [System Configuration | Configuring Inbound Actions and Notifications](https://youtu.be/dhjLiwtT97E)
