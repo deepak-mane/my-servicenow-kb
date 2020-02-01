@@ -11,6 +11,7 @@ My Servicenow Learnings
 - [Inbound email actions](https://www.youtube.com/watch?v=C2FMo3l1swk)
 - [ServiceNow Case Studies](http://www.fideltech.com/servicenow-case-studies/)
 - [ServiceNow - How to Create SLAs](https://www.youtube.com/watch?v=1_T2VtFbldQ)
+- [ServiceNow SLA | Introduction of SLA | What is SLA](https://www.youtube.com/watch?v=zMOoVokK3gI)
 
 
 # Navigations for Admin
