@@ -1,4 +1,35 @@
 # my-servicenow-kb
+
+## ITOM LEAD
+1. Experienced in implementation of ITOM solution using industry best practices
+2. Hands-on development to include 
+- creation, configuration and customization of patterns, 
+- creation, configuration and customization of Discovery Schedules, 
+- creation, configuration and customization of probe, sensors and Event rules
+3. Integrate ServiceNow ITOM modules with 
+- a variety of enterprise monitoring tools, 
+- automation of alerts, 
+- application management tools using OOB plugins and API methods
+4. Experienced in implementation on 
+- ServiceNow Discovery, 
+- Service Mapping, 
+- Event Mgmt and 
+- Orchestration use cases.
+
+5. 3rd party software integrations with ServiceNow
+6. Design and modify 
+- ServiceNow forms, 
+- workflows, 
+- scripts, 
+- transform maps, 
+- service maps, 
+- web services, 
+- inbound email actions, 
+- SLAs and more.
+7. MID Server management experience
+8. Experience in multiple ServiceNow implementations
+
+
 My Servicenow Learnings
 - [ServiceNow London Platform Admin](https://docs.servicenow.com/bundle/london-platform-administration/page/get-started/servicenow-overview/reference/r_AdministerServiceNow.html)
 - [Search Knowledge Bases ServiceNow](https://hi.service-now.com/$knowledge.do)
